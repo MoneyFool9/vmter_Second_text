@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的主页</title>
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+    <link rel="stylesheet" href="./login.css">
+    <script src="../js/ajax.js"></script>
+    <script src="../js/tool.js"></script>
+    <script src="./myPage.js"></script>
+</head>
+<body>
+    <header class="layout">
+        <div class="top-box">
+            <div class="top">
+                <div></div>
+                <ul>
+                    <li><a href="#"><i class="iconfont">&#xe70f;</i></a></li>
+                    <li><a href="#"></a><i class="iconfont">&#xe66a;</i></li>
+                    <li><a href="#"></a><i class="iconfont">&#xe611;</i></li>
+                </ul>
+            </div>
+            
+        </div>
+    </header>
+    <section class="login">
+        <div class="login-box J_loginBox">
+            <img src="../images/userImg.jpg" alt="">
+            <span id="J_userNameBox">点击登录/注册</span>
+        </div>
+        <div class="vip-box">
+            <div class="vip">
+                <div class="vip-info">
+                    <span>开通会员 </span>
+                    <p>尊享免广告等特权</p>
+                </div>
+                <button>¥2.00开通</button>
+            </div>
+        </div>
+    </section>
+    <section class="options-card">
+        <div class="cardBox">
+            <ul>
+                <li><a href="#">
+                    <i class="iconfont">&#xe639;</i>
+                    <span>商城</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="iconfont">&#xe99a;</i>
+                    <span>浏览历史</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="iconfont">&#xe6ba;</i>
+                    <span>我的消息</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="iconfont">&#xe693;</i>
+                    <span>成为作家</span>
+                </a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="advertisement">
+        <div class="advCon">
+            <div class="quan">
+                <h2>惊喜电商券</h2>
+                <div class="quanCon">
+                    <div class="text">
+                        <p>12.01<span>元</span></p>
+                        <p>商城无门槛券</p>
+                    </div>
+                    <span>领<br>取</span>
+                </div>
+            </div>
+            <div class="goodBook">
+                <h2>精选好书</h2>
+                <div class="bookList"></div>
+            </div>
+        </div>
+
+    </section>
+    <section class="money">
+        <div class="moneyBox">
+            <div class="top">
+                <div class="bi">
+                    <h2>0</h2>
+                    <span>金币余额(币)</span>
+                </div>
+                <div class="yuan">
+                    <h2>0.00</h2>
+                    <span>现金余额(元)</span>
+                </div>
+                <div class="weixin">
+                    <img src="../images/WePay.png" alt="">
+                    <p>微信提现</p>
+                    <i class="iconfont">&#xe606;</i>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="left">福利</div>
+                <div class="middle">查看赚钱攻略,快乐攒钱</div>
+                <div class="right">立即查看</div>
+            </div>
+        </div>
+    </section>
+    <section class="options-area">
+        <div class="optionsCon">
+            <ul>
+                <li><a href="#">
+                    <i class="iconfont">&#xe6ac;</i>
+                    <span>我的下载</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="iconfont">&#xe69d;</i>
+                    <span>游戏中心</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="iconfont">&#xe70e;</i>
+                    <span>创作中心</span>
+                </a></li>
+                <li><a href="#">
+                        <i class="iconfont">&#xe607;</i>
+                        <span>笔记书城</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="iconfont">&#xe64c;</i>
+                    <span>看过的人</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="iconfont">&#xe60a;</i>
+                    <span>阅读偏好</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="iconfont">&#xe617;</i>
+                    <span>赞过的短剧</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="iconfont">&#xe691;</i>
+                    <span>番茄指南</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="iconfont">&#xe60e;</i>
+                    <span>我的公益</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="iconfont">&#xe620;</i>
+                    <span>反馈与帮助</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="iconfont">&#xe608;</i>
+                    <span>邀请有礼</span>
+                </a></li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer-fixNav">
+        <ul>
+            <li><a href="../index.html">
+                    <i class="iconfont">&#xe602;</i>
+                    <span>书城</span>
+                </a></li>
+            <li><a href="../search/search.html">
+                    <i class="iconfont">&#xe706;</i>
+                    <span>分类</span>
+                </a></li>
+            <li><a href="#">
+                    <i class="iconfont">&#xe608;</i>
+                    <span>福利</span>
+                </a></li>
+            <li><a href="../bookList/bookList.html">
+                    <i class="iconfont">&#xe60b;</i>
+                    <span>书架</span>
+                </a></li>
+            <li class="current"><a href="./My.html">
+                    <i class="iconfont">&#xe60d;</i>
+                    <span>我的</span>
+                </a></li>
+        </ul>
+    </footer>
+    <br>
+    <br>
+    <br>
+</body>
+</html>

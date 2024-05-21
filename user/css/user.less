@@ -1,0 +1,179 @@
+@import url(../../less/base.less);
+
+@baseSize: 4.14vw;
+
+.layout{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right top, #88a5ab, #80a5a9, #78a5a6, #71a4a1, #6ba49b, #66a497, #62a492, #5fa48d, #5aa58a, #56a586, #52a682, #4ea67e);
+    .header-nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: (10 / @baseSize);
+        .left{
+            width: (20 / @baseSize);
+
+            i{
+                font-size: (24 / @baseSize);
+            }
+        }
+        .right {
+            width: (20 / @baseSize);
+            i {
+                font-size: (24 / @baseSize);
+            }
+        }
+    }
+}
+.user-info {
+    background-image: linear-gradient(to right top, #88a5ab, #80a5a9, #78a5a6, #71a4a1, #6ba49b, #66a497, #62a492, #5fa48d, #5aa58a, #56a586, #52a682, #4ea67e);
+    margin-top: (46 / @baseSize);
+    .userInfo-box{
+        margin-left: (15 / @baseSize);
+        .userImg {
+            padding-top: (20 / @baseSize);
+            display: flex;
+            img{
+                display: block;
+                border-radius: 50%;
+                width: (60 / @baseSize);
+                height: auto;
+            }
+            .userMsg {
+                margin-left: (10 / @baseSize);
+                h2{
+                    margin-top: (5 / @baseSize);
+                    color: #fff;
+                    font-size: (22 / @baseSize);
+                }
+                p {
+                    margin-top: (4 / @baseSize);
+                    color: #e5e4e4bd;
+                }
+            }
+        }
+        .intro{
+            color: #f6f6f6ea;
+            padding: (15 / @baseSize) 0;
+        }
+        .personInfo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .Info {
+                ul{
+                    display: flex;
+                    gap: (30 / @baseSize);
+                    li {
+                        color: #fff;
+                        span {
+                            color: #f6f6f6ea;
+                        }
+                    }
+                }
+            }
+            .writeInfo {
+                margin-right: (15 / @baseSize);
+                color: orange;
+                padding: (7 / @baseSize) (15 / @baseSize);
+                border-radius: (28 / @baseSize);
+                background-color: #fff;
+                font-weight: 700;
+            }
+        }
+    }
+}
+.person-space {
+    width: 100%;
+    padding: (10 / @baseSize) (15 / @baseSize) 0;
+    border-radius: (18 / @baseSize) (18 / @baseSize) 0 0;
+    transform: translateY((-40 / @baseSize));
+    background-color: #fff;
+    .bookSpace {
+        .title{
+            padding-top: (10 / @baseSize);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            p {
+                font-size: (22 / @baseSize);
+                font-weight: 800;
+            }
+            .checkBook {
+                transform: translateY((-3 / @baseSize));
+            }
+        }
+    }
+    .mySpace {
+        .options {
+            display: flex;
+            font-size: (18 / @baseSize);
+            line-height: (30 / @baseSize);
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 (40 / @baseSize);
+            i{
+                font-size: (24 / @baseSize);
+            }
+            div {
+                display: flex;
+                gap: (5 / @baseSize);
+            }
+        }
+    }
+}
+.bookList{
+    .bookType{
+        display: flex;
+        align-items: center;
+        gap: (10 /@baseSize);
+        margin-top: (10 /@baseSize);
+        li{
+            padding: (5 /@baseSize) (10 /@baseSize);
+            background-color: #eee;
+            border-radius: (8 /@baseSize);
+        }
+    }
+    .book{
+        display: flex;
+        gap: (15 /@baseSize);
+        flex-wrap: wrap;
+        margin-top: (15 /@baseSize);
+        li{
+            width: (80 / @baseSize);
+            .book-cover{
+                background-color: #eee;
+                width: (88 / @baseSize);
+                height: (120 / @baseSize);
+                border-radius: (8 / @baseSize);
+                border: none;
+            }
+            .book-title{
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
+.mySpace{
+    border-top: (5 / @baseSize) solid #ccc;
+    .titleTab{
+        margin-top: (10 / @baseSize);
+        ul{
+            display: flex;
+            gap: (15 / @baseSize);
+            li{
+                font-size: (20 / @baseSize);
+                padding: (3 / @baseSize);
+                box-sizing: border-box;
+            }
+        }
+        
+    }
+}

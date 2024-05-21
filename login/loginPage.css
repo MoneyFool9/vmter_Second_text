@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: Helvetica Neue, Tahoma, Arial, PingFangSC-Regular, Hiragino Sans GB, Microsoft Yahei, sans-serif;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+ul {
+  list-style: none;
+}
+.ellipsis-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.arrow {
+  position: absolute;
+  top: 2.41545894vw;
+  left: 2.41545894vw;
+  display: block;
+  font-size: 5.79710145vw;
+  transform: rotate(-270deg);
+}
+.title {
+  position: absolute;
+  top: 27.77777778vw;
+  left: 50%;
+  margin-left: -19.80676329vw;
+  font-size: 6.76328502vw;
+}
+.help {
+  position: absolute;
+  right: 4.10628019vw;
+  top: 2.41545894vw;
+  font-size: 4.83091787vw;
+  font-weight: 600;
+}
+.loginForm {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 48.30917874vw;
+  padding: 0 6.03864734vw;
+}
+.loginForm .loginForm-box {
+  flex: 1;
+}
+.loginForm .loginForm-box ul li .clear-input-box-reset {
+  position: relative;
+}
+.loginForm .loginForm-box ul li .clear-input-box-reset .pwd-toggle {
+  width: 2.41545894vw;
+  position: absolute;
+  top: 0;
+  right: 21.25603865vw;
+  border: none;
+}
+.loginForm .loginForm-box ul li .clear-input-box-reset .pwd-toggle i {
+  font-size: 5.79710145vw;
+}
+.loginForm .loginForm-box ul li .clear-input-box-reset .clear-input {
+  width: 2.41545894vw;
+  position: absolute;
+  top: 0;
+  left: 57.97101449vw;
+}
+.loginForm .loginForm-box ul li .clear-input-box-reset .findPw {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #099FDE;
+}
+.loginForm .loginForm-box ul li .clear-input-box .clear-input {
+  width: 3.8647343vw;
+  float: right;
+}
+.loginForm .loginForm-box ul li div {
+  line-height: 16.90821256vw;
+  border-bottom: 1px solid #ccc;
+  height: 14.49275362vw;
+  width: 100%;
+}
+.loginForm .loginForm-box ul li div input {
+  width: 80%;
+  height: auto;
+  border: none;
+  outline: none;
+  font-size: 4.34782609vw;
+}
+.loginForm .loginForm-box .btn_box {
+  margin-top: 7.24637681vw;
+}
+.loginForm .loginForm-box .btn_box button {
+  width: 100%;
+  height: 9.17874396vw;
+  border-radius: 0.96618357vw;
+  color: #fff;
+  background-color: #ff9a14;
+  background-image: linear-gradient(90deg, #FFB114 0%, #f70 100%);
+  border: none;
+  font-size: 4.10628019vw;
+}
+.loginWay {
+  width: 100%;
+  position: absolute;
+  bottom: 15.70048309vw;
+  left: 0;
+}
+.loginWay .wayBox {
+  width: 100%;
+}
+.loginWay .wayBox ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12.07729469vw;
+}
+.loginWay .wayBox ul .Baidu a img {
+  transform: scale(0.8);
+}
+.loginWay .wayBox ul .Weibo a img {
+  transform: scale(0.9);
+}
+.loginWay .wayBox ul li {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 1.20772947vw;
+}
+.loginWay .wayBox ul li a {
+  display: block;
+  width: 7.24637681vw;
+}
+.loginWay .wayBox .text {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 4.83091787vw;
+}
+.loginWay .wayBox .text input {
+  margin-right: 0.72463768vw;
+}
+.loginWay .wayBox .text p {
+  color: #099fde;
+  cursor: pointer;
+}
+.toSign {
+  position: absolute;
+  left: 50%;
+  margin-left: -19.56521739vw;
+  margin-top: 2.41545894vw;
+}
+.toSign a {
+  color: #099fde;
+  font-weight: 600;
+}

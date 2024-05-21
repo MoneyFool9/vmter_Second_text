@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: Helvetica Neue, Tahoma, Arial, PingFangSC-Regular, Hiragino Sans GB, Microsoft Yahei, sans-serif;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+ul {
+  list-style: none;
+}
+.ellipsis-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.layout {
+  width: 100%;
+  background-image: linear-gradient(to right top, #e9f3ff, #e5f7fe, #e4fafb, #e9fcf5, #f1fdf0, #f5fded, #fafce9, #fffbe7, #fff9e3, #fff7df, #fff5db, #fff3d7);
+}
+.layout .search {
+  display: flex;
+  padding: 4.83091787vw 2.41545894vw 2.41545894vw;
+}
+.layout .search input {
+  height: 8.45410628vw;
+  flex: 1;
+  border: none;
+  vertical-align: middle;
+  border-radius: 1.44927536vw;
+  outline: none;
+  padding-left: 10 / 4.14vw;
+}
+.layout .search .search-icon {
+  padding-left: 2.41545894vw;
+  text-align: center;
+  background-color: #fff;
+}
+.layout .search .search-icon i {
+  display: block;
+  height: 4.83091787vw;
+  line-height: 8.45410628vw;
+}
+.layout .header-tabs ul {
+  display: flex;
+  align-items: center;
+  margin-left: 2.41545894vw;
+  gap: 2.41545894vw;
+}
+.layout .header-tabs ul a {
+  color: #8c8c8c;
+}
+.layout .header-tabs ul .current {
+  font-size: 4.83091787vw;
+  font-weight: 800;
+}
+.layout .header-tabs ul .current a {
+  color: #000;
+}
+.layout .options-card ul {
+  display: flex;
+  margin-left: 2.41545894vw;
+  margin-top: 1.69082126vw;
+  gap: 3.62318841vw;
+}
+.layout .options-card ul li {
+  display: block;
+  padding: 0.96618357vw;
+  width: 18.11594203vw;
+  height: 7.24637681vw;
+  background-color: #fff;
+  white-space: nowrap;
+  border-radius: 1.69082126vw;
+}
+.layout .options-card ul li a {
+  display: flex;
+  justify-content: space-between;
+}
+.layout .options-card ul li a i {
+  line-height: 4.83091787vw;
+}
+.layout .options-card ul li a span {
+  font-size: 3.38164251vw;
+  font-weight: 600;
+  margin-left: 1.69082126vw;
+}
+.footer-fixNav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #e6e6e6;
+  padding: 0.72463768vw 3.8647343vw;
+}
+.footer-fixNav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer-fixNav ul .current {
+  font-weight: 800;
+}
+.footer-fixNav ul .current a {
+  color: #3d3c3c;
+}
+.footer-fixNav ul a {
+  display: flex;
+  flex-direction: column;
+  color: #8c8c8c;
+}
+.footer-fixNav ul a i {
+  font-size: 5.79710145vw;
+}
+.footer-fixNav ul a span {
+  font-size: 3.14009662vw;
+  text-align: center;
+  margin-left: -0.24154589vw;
+}
+section {
+  padding: 2.41545894vw 3.62318841vw;
+}
+.top-list {
+  width: 100%;
+  height: 72.46376812vw;
+  background-color: #fff;
+  padding: 6.03864734vw 4.83091787vw;
+  border-radius: 2.89855072vw;
+}
+.top-list .top-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-list .top-title span {
+  font-size: 5.31400966vw;
+  font-weight: 800;
+  line-height: 2.41545894vw;
+}
+.top-list .top-title span i {
+  margin-left: 2.41545894vw;
+  position: relative;
+  bottom: 0.48309179vw;
+}
+.bookInfo .bookCon-tab ul {
+  display: flex;
+  gap: 2.41545894vw;
+}
+.bookInfo .bookCon-tab ul li {
+  background-color: #fff;
+  padding: 1.20772947vw 2.41545894vw;
+  border-radius: 1.44927536vw;
+}
+.bookInfo .book-waterfall {
+  position: relative;
+  margin-bottom: 36.23188406vw;
+  margin-top: 4.83091787vw;
+  width: 100%;
+  height: 289.85507246vw;
+}
+.bookInfo .book-waterfall .bookCover-box {
+  position: absolute;
+  border-radius: 3.38164251vw;
+  overflow: hidden;
+  width: 45.16908213vw;
+}
+.bookInfo .book-waterfall .bookCover-box img {
+  height: 57.97101449vw;
+}
+.bookInfo .book-waterfall .bookCover-box .bookMsg {
+  padding: 1.93236715vw;
+  max-height: 20.89371981vw;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+}
+.bookInfo .book-waterfall .bookCover-box .bookMsg h3 {
+  font-size: 3.8647343vw;
+  margin-bottom: 1.93236715vw;
+}
+.bookInfo .book-waterfall .bookCover-box .bookMsg p {
+  max-height: 9.66183575vw;
+  font-size: 3.38164251vw;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.bookInfo .book-waterfall .book-group {
+  position: absolute;
+  background-color: #fff;
+  width: 45.16908213vw;
+  padding: 2.41545894vw;
+  max-height: 64.00966184vw;
+  border-radius: 2.89855072vw;
+}
+.bookInfo .book-waterfall .book-group .group-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bookInfo .book-waterfall .book-group .group-list {
+  margin-top: 3.62318841vw;
+}
+.bookInfo .book-waterfall .book-group .group-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2.41545894vw;
+}
+.bookInfo .book-waterfall .book-group .group-list ul li {
+  display: flex;
+  justify-content: center;
+}
+.bookInfo .book-waterfall .book-group .group-list ul li img {
+  width: 10.86956522vw;
+  height: 14.49275362vw;
+}
+.bookInfo .book-waterfall .book-group .group-list ul li .someMsg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1.20772947vw;
+}
+.bookInfo .book-waterfall .book-group .group-list ul li .someMsg p {
+  color: #f8681a;
+  font-size: 2.89855072vw;
+}

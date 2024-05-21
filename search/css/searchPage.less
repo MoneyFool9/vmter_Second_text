@@ -1,0 +1,112 @@
+@import url(../../less/base.less);
+
+@baseSize: 4.14vw;
+
+.layout {
+    width: 100%;
+    background-image: linear-gradient(to right top, #e9f3ff, #e5f7fe, #e4fafb, #e9fcf5, #f1fdf0, #f5fded, #fafce9, #fffbe7, #fff9e3, #fff7df, #fff5db, #fff3d7);
+    .search {
+        display: flex;
+        align-items: center;
+
+        padding: (20 / @baseSize) (10 / @baseSize) (10 / @baseSize);
+        
+        input {
+            height: (35 / @baseSize);
+            flex: 1;
+            border: none;
+            vertical-align: middle;
+            border-radius: (6 / @baseSize);
+            outline: none;
+            padding-left: (10 / @baseSize);
+        }
+
+        .search-icon {
+            padding-left: (10 / @baseSize);
+            height: (35 / @baseSize);
+            text-align: center;
+            background-color: #fff;
+
+            i {
+                display: block;
+                margin-top: (8 / @baseSize);
+            }
+        }
+        .goBack{
+            i{
+                font-size: (24 / @baseSize);
+            }
+        }
+        .search-btn{
+            padding: (10 / @baseSize) (5 / @baseSize);
+        }
+    }
+}
+.searchCon{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    ul{
+        padding: (12 / @baseSize) (18 / @baseSize);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: (20 / @baseSize);
+        li{
+            width: 100%;
+            display: flex;
+            // justify-content: space-between;
+            .img-box{
+                position: relative;
+                img {
+                    width: (120 / @baseSize);
+                    height: (150 / @baseSize);
+                    border-radius: (8 / @baseSize);
+                }
+                .point{
+                    position: absolute;
+                    bottom: (5 / @baseSize);
+                    left: (5 / @baseSize);
+                    color: #ffb20bd2;
+                }
+            }
+            
+            .bookInfo{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: (10 / @baseSize);
+                margin-left: (10 / @baseSize);
+                span {
+                    display: block;
+                    color: #a6a6a6;
+                }
+            
+                h3 {
+                    display: block;
+                    font-size: (24 / @baseSize);
+                }
+            
+                p {
+                    font-size: (18 / @baseSize);
+                    color: #a6a6a6;
+                    display: block;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+            
+        }
+    }
+}
+.loading-icon{
+    position: fixed;
+    top: 50%;
+    margin-top: (-50 / @baseSize);
+    margin-left: (-50 / @baseSize);
+    left: 50%;
+    z-index: 5;
+    width: (100 / @baseSize);
+    height: (100 / @baseSize);
+}

@@ -1,0 +1,163 @@
+@import url(../less/base.less);
+
+@baseSize: 4.14vw;
+
+.arrow {
+    position: absolute;
+    top: (10 /@baseSize);
+    left: (10 / @baseSize);
+    display: block;
+    font-size: (24 / @baseSize);
+    transform: rotate(-270deg);
+}
+.title {
+    position: absolute;
+    top: (115 / @baseSize);
+    left: 50%;
+    margin-left: (-82 / @baseSize);
+    font-size: (28 / @baseSize);
+}
+.help {
+    position: absolute;
+    right: (17 / @baseSize);
+    top: (10 / @baseSize);
+    font-size: (20 / @baseSize);
+    font-weight: 600;
+}
+.loginForm {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: (200 / @baseSize);
+    padding: 0 (25 / @baseSize);
+    .loginForm-box{
+        flex: 1;
+        ul{
+            li{
+                .clear-input-box-reset{
+                    position: relative;
+                    .pwd-toggle {
+                        width: (10 / @baseSize);
+                        position: absolute;
+                        top: 0;
+                        right: (88 / @baseSize);
+                        border: none;
+                        i {
+                            font-size: (24 / @baseSize);
+                        }
+                    }
+                    .clear-input{
+                        width: (10 / @baseSize);
+                        position: absolute;
+                        top: 0;
+                        left: (240 / @baseSize);
+                    }
+                    .findPw {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        color: #099FDE;
+                    }
+                }
+                .clear-input-box{
+                    .clear-input{
+                        width: (16 / @baseSize);
+                        float: right;
+                    }
+                }
+
+                div{
+                    line-height: (70 / @baseSize);
+                    border-bottom: 1px solid #ccc;
+                    height: (60 / @baseSize);
+                    width: 100%;
+                    input {
+                        width: 80%;
+                        height: auto;
+                        border: none;
+                        outline: none;
+                        font-size: (18 / @baseSize);
+                    }
+                }
+            }
+        }
+        .btn_box {
+            margin-top: (30 / @baseSize);
+            button {
+                width: 100%;
+                height: (38 / @baseSize);
+                border-radius: (4 / @baseSize);
+                color: #fff;
+                background-color: #ff9a14;
+                background-image: linear-gradient(90deg, #FFB114 0%, #f70 100%);
+                border: none;
+                font-size: (17 / @baseSize);
+            }
+        }
+    }
+}
+
+.loginWay{
+    width: 100%;
+    position: absolute;
+    bottom: (65 / @baseSize);
+    left: 0;
+    .wayBox {
+        width: 100%;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 (50 / @baseSize) ;
+            .Baidu{
+                a{
+                    img{
+                        transform: scale(0.8);
+                    }
+                }
+            }
+            .Weibo{
+                a{
+                    img{
+                        transform: scale(0.9);
+                    }
+                }
+            }
+            li{
+                border: 1px solid #ccc;
+                border-radius: 50%;
+                padding: (5 / @baseSize);
+                a{
+                    display: block;
+                    width: (30 / @baseSize);
+                }
+            }
+        }
+        .text {
+            input {
+                margin-right: (3 / @baseSize);
+            }
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-top: (20 / @baseSize);
+            p{
+                color: #099fde;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.toSign{
+    position: absolute;
+    left: 50%;
+    margin-left: (-81 / @baseSize);
+    margin-top: (10 / @baseSize);
+    a {
+        color: #099fde;
+        font-weight: 600;
+    }
+    
+}

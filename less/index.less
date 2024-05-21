@@ -1,0 +1,229 @@
+//导入初始化样式
+@import url(base.less);
+//声明基准值
+@baseSize: 4.14vw;
+
+.layout {
+    width: 100%;
+    background-image: linear-gradient(to right top, #e9f3ff, #e5f7fe, #e4fafb, #e9fcf5, #f1fdf0, #f5fded, #fafce9, #fffbe7, #fff9e3, #fff7df, #fff5db, #fff3d7);
+    .search {
+        display: flex;
+        padding: (20 / @baseSize) (10 / @baseSize) (10 / @baseSize);
+        input {
+            height: (35 / @baseSize);
+            flex: 1;
+            border: none;
+            vertical-align: middle;
+            border-radius: (6 / @baseSize);
+            outline: none;
+            padding-left: 10 / @baseSize;
+        }
+        .search-icon {
+            padding-left: (10 / @baseSize);
+            text-align: center;
+            background-color: #fff;
+            i {
+                display: block;
+                height: (20 / @baseSize);
+                line-height: (35 / @baseSize);
+            }
+        }
+    }
+    .header-tabs {
+        ul{
+            display: flex;
+            align-items: center;
+            margin-left: (10 / @baseSize);
+            gap: (10 / @baseSize);
+            a{
+                color: #8c8c8c;
+            }
+            .current{
+                a{
+                    color: #000;
+                }
+                font-size: (20 / @baseSize);
+                font-weight: 800;
+            }
+        }
+
+    }
+    .options-card {
+        ul{
+            display: flex;
+            margin-left: (10 / @baseSize);
+            margin-top: (7 / @baseSize);
+            gap: (15 / @baseSize);
+            li {
+                display: block;
+                padding: (4 / @baseSize);
+                width: (75 / @baseSize);
+                height: (30 / @baseSize);
+                background-color: #fff;
+                white-space: nowrap;
+                border-radius: (7 / @baseSize);
+                a {
+                    display: flex;
+                    justify-content: space-between;
+                    i {
+                        line-height: (20 / @baseSize);
+                    }
+                    span{
+                        font-size: (14 / @baseSize);
+                        font-weight: 600;
+                        margin-left: (7 / @baseSize);
+                    }
+                }
+            }
+        }
+    }
+
+}
+.footer-fixNav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    padding: (3 / @baseSize) (16 / @baseSize);
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .current {
+            font-weight: 800;
+            a{
+                color: #3d3c3c;
+            }
+
+        }
+        a {
+            display: flex;
+            flex-direction: column;
+            color: #8c8c8c;
+            i {
+                font-size: (24 / @baseSize);
+            }
+            span {
+                font-size: (13 / @baseSize);
+                text-align: center;
+                margin-left: (-1 / @baseSize);
+            }
+        }
+    }
+}
+section{
+    padding: (10 / @baseSize) (15 / @baseSize);
+}
+.top-list{
+    width: 100%;
+    height: (300 / @baseSize);
+    background-color: #fff;
+    padding: (25 / @baseSize) (20 / @baseSize);
+    border-radius: (12 / @baseSize);
+    .top-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        span{
+            font-size: (22 / @baseSize);
+            font-weight: 800;
+            line-height: (10 / @baseSize);
+            i{
+                margin-left: (10 / @baseSize);
+                position: relative;
+                bottom: (2 / @baseSize);
+            }
+        }
+    }
+}
+.bookInfo{
+    .bookCon-tab{
+        ul{
+            display: flex;
+            gap: (10 / @baseSize);
+            li{
+                background-color: #fff;
+                padding: (5 / @baseSize) (10 / @baseSize);
+                border-radius: (6 / @baseSize);
+            }
+        }
+    }
+    .book-waterfall{
+        position: relative;
+        margin-bottom: (150 / @baseSize);
+        margin-top: (20 / @baseSize);
+        width: 100%;
+        height: (1200 / @baseSize);
+        // display: flex;
+        // flex-wrap: wrap;
+        // gap: 10 / @baseSize;
+        .bookCover-box {
+            position: absolute;
+            border-radius: (14 / @baseSize);
+            overflow: hidden;
+            width: (187 / @baseSize);
+            img{
+                height: (240 / @baseSize);
+            }
+            .bookMsg{
+                padding: (8 / @baseSize);
+                max-height: (86.5 / @baseSize);
+                display: block;
+                width: 100%;
+                background-color: #fff;
+                h3{
+                    font-size: (16 / @baseSize);
+                    margin-bottom: (8 / @baseSize);
+                }
+                p{
+                    max-height: (40 / @baseSize);
+                    font-size: (14 / @baseSize);
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+            }
+        }
+        .book-group{
+            position: absolute;
+            background-color: #fff;
+            width: (187 / @baseSize);
+            padding: (10 / @baseSize);
+            max-height: (265 / @baseSize);
+            border-radius: (12 / @baseSize);
+            .group-title{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .group-list{
+                margin-top: (15 / @baseSize);
+                
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: (10 / @baseSize);
+                    li{
+                        display: flex;
+                        justify-content: center;
+                        img{
+                            width: (45 / @baseSize);
+                            height: (60 / @baseSize);
+                        }
+                        .someMsg{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            margin-left: (5 / @baseSize);
+                            p{
+                                color: #f8681a;
+                                font-size: (12 / @baseSize);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

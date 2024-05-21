@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>书籍详情页</title>
+    <link rel="stylesheet" href="./book.css">
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+    <script src="../js/ajax.js"></script>
+    <script src="../js/tool.js"></script>
+    <script src="./reading.js"></script>
+</head>
+<body>
+    <section class="comment-edit-bd J_commentEditBoard" style="display: none;">
+        <div class="mask">
+            <div class="comment-wrap">
+                <h3 class="title">书籍评论</h3>
+                <a href="javascript:;" class="closeBtn J_closeBtn">
+                    <i class="iconfont">&#xe623;</i>
+                </a>
+                <p class="tt">您觉得本书如何？请给出宝贵意见</p>
+                <div class="edit-txt-bd">
+                    <textarea class="edit-txt J_editTxt" placeholder="请尽可能详尽描述您的阅读体验，例如小说内容、小说结构、阅读感受、文章长度，文章质量，更新速度等" maxlength="1000"></textarea>
+                    <p class="txt-tip">
+                        <span class="txt-count J_txtCount">0</span>/1000
+                    </p>
+                </div>
+                <!-- <p class="comment-desc">不可少于15字。评价多于100字将有机会获得200积分奖励哦~</p> -->
+                <button type="button" class="comment-btn submit J_submitBtn">提交评论</button>
+            </div>
+            
+        </div>
+        </section>
+    <div class="wrap" id="J_bookDetailWrapper">
+        <img class="cover" src="../images/loading187*240.jpg" alt="">
+        <h2>异兽迷城</h2>
+        <div class="pusherBox">
+            <img class="pusher" src="../images/userImg.jpg" alt="">
+            <p>落叶</p>
+            <div class="do-follow">+关注</div>
+        </div>
+        <div class="bookInfo">
+            <div class="bookInfo-box">
+                <div class="bookData">
+                    <div class="bookData-box">
+                        <div><h3>8.2</h3>分</div>
+                        <div class="dataBox-down">250人点评<i class="iconfont">&#xe606;</i></div>
+                    </div>
+                    <div class="bookData-box">
+                        <div>
+                            <h3>7698</h3>
+                        </div>
+                        <div class="dataBox-down">发布日期</div>
+                    </div>
+                    <div class="bookData-box"><div>
+                        <h3>10.7</h3>万字
+                    </div>
+                    <div class="dataBox-down">已完结</div></div>
+                </div>
+                <div class="bookMsg">
+                    <div class="intro">简介</div>
+                    <div class="intro-info">也许你需要我的帮助呢也许你需要我的帮助呢也许你需要我的帮助呢也许你需要我的帮助呢</div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="toRead">阅读本书</div>
+    </div>
+<script type="text/html" id="J_bookInfo">
+    <img class="cover" src="../images/loading187*240.jpg" alt="">
+    <h2>{{ name }}</h2>
+    <div class="pusherBox">
+        <img class="pusher" src="../images/userImg.jpg" alt="">
+        <p>{{ author }}</p>
+        <div class="do-follow">+关注</div>
+    </div>
+    <div class="bookInfo">
+        <div class="bookInfo-box">
+            <div class="bookData">
+                <div class="bookData-box">
+                    <div>
+                        <h3>{{ point }}</h3>分
+                    </div>
+                    <div class="dataBox-down">250人点评<i class="iconfont">&#xe606;</i></div>
+                </div>
+                <div class="bookData-box">
+                    <div>
+                        <h3 class="time">{{ postedTime }}</h3>
+                    </div>
+                    <div class="dataBox-down">发布日期</div>
+                </div>
+                <div class="bookData-box">
+                    <div>
+                        <h3>10.7</h3>万字
+                    </div>
+                    <div class="dataBox-down">已完结</div>
+                </div>
+            </div>
+            <div class="bookMsg">
+                <div class="intro">简介</div>
+                <div class="intro-info">{{ label }} · {{ introduction }}</div>
+            </div>
+            
+        </div>
+        <div class="bookComment">
+            <div class="title-box">
+                <div class="title">热门书评</div>
+                <div class="do-Comment J_doComment">我也要评论 !</div>
+            </div>
+        
+            <ul class="commentList J_commentList">
+                <li>
+                    <div class="Cmt-info">
+                        <div class="Cmt-userImg"><img src="../images/userImg.jpg" alt=""></div>
+                        <div class="Cmt-content">
+                            <div>您的评论正在赶来...</div>
+                            <div class="star">2024-5-20 13:14</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="Cmt-info">
+                        <div class="Cmt-userImg"><img src="../images/userImg.jpg" alt=""></div>
+                        <div class="Cmt-content">
+                            <div>您的评论正在赶来...</div>
+                            <div class="star">2024-5-20 13:14</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="Cmt-info">
+                        <div class="Cmt-userImg"><img src="../images/userImg.jpg" alt=""></div>
+                        <div class="Cmt-content">
+                            <div>您的评论正在赶来...</div>
+                            <div class="star">2024-5-20 13:14</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="toRead">阅读本书</div>
+</script>
+<script type="text/html" id="J_commentTpl">
+    <li data-commentid = "{{ commentId }}">
+        <div class="Cmt-info">
+            <div class="Cmt-userImg"><img src="../images/userImg.jpg" alt=""></div>
+            <div class="Cmt-content">
+                <div>{{ data }}</div>
+                <div class="star">{{ nowTimeDate }}</div>
+            </div>
+        </div>
+        
+        <div class="deleteComment" onclick="deleteComment(event)">删除</div>
+    </li>
+</script>
+</body>
+</html>

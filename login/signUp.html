@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页</title>
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+    <link rel="stylesheet" href="./loginPage.css">
+    <script src="../js/ajax.js"></script>
+    <script src="../js/tool.js"></script>
+    <script src="./register.js"></script>
+</head>
+
+<body>
+    <i class="iconfont arrow" id="J_goBack">&#xe605;</i>
+    <h2 class="title">番茄小说注册</h2>
+    <p class="help">帮助</p>
+    <div class="loginForm">
+        <div class="loginForm-box">
+            <ul>
+                <li>
+                    <div class="clear-input-box">
+                        <input type="text" id="J_username"
+                            placeholder="国内手机号/用户名/邮箱/卡号" autocomplete="" inputmode="text" maxlength="30" value="">
+                        <div role="button" tabindex="0" aria-label="清空输入" class="clear-input"
+                            style="display: block; right: 0px;">
+                            <i class="iconfont J_clearInput" style="display: none;">&#xe621;</i>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="clear-input-box-reset">
+                        <input type="password" id="J_password" placeholder="用户密码"
+                            autocomplete="" inputmode="" maxlength="20" value="">
+                        <div role="button" tabindex="0" aria-label="清空输入" class="clear-input"
+                            style="display: block;  left: 83.971014vw;">
+
+                            <i class="iconfont J_clearInput" style="display: none;">&#xe621;</i>
+                        </div>
+                            <div class="pwd-toggle J_hidePw" style="right: 10.256039vw; display: none;"><i class="iconfont">&#xe7a8;</i></div>
+                            <div class="pwd-toggle J_showPw" style="right: 10.256039vw; display: none;"><i class="iconfont">&#xe730;</i></div>
+                    </div>
+
+                </li>
+            </ul>
+            <div class="btn_box"><button type="button" class="g_btn_s nofastclick J_signUpBtn">注册</button></div>
+        </div>
+    </div>
+    <footer class="loginWay">
+        <div class="wayBox">
+            <div class="way">
+                <ul>
+                    <li class="QQ"><a href="#"><img src="../images/QQ.png" alt=""></a></li>
+                    <li class="Weixin"><a href="#"><img src="../images/微信.png" alt=""></a></li>
+                    <li class="Baidu"><a href="#"><img src="../images/baidu.png" alt=""></a></li>
+                    <li class="Weibo"><a href="#"><img src="../images/weibo.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="text">
+                <input id="J_isAgree" type="checkbox">阅读并同意番茄小说<p>《用户协议》</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

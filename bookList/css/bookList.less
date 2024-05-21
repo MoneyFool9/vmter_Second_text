@@ -1,0 +1,121 @@
+@import url(../../less/base.less);
+
+@baseSize: 4.14vw;
+
+.header-tabs {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right top, #e9f3ff, #e5f7fe, #e4fafb, #e9fcf5, #f1fdf0, #f5fded, #fafce9, #fffbe7, #fff9e3, #fff7df, #fff5db, #fff3d7);
+    .headerCon{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: (10 / @baseSize); 
+        .tabs {
+            margin-left: (15 / @baseSize);
+            ul {
+                display: flex;
+                gap: (15 / @baseSize);
+                .current {
+                    a{
+                        font-weight: 800;
+                        font-size: (24 / @baseSize);
+                    }
+                }
+                li {
+                    a{
+                        font-size: (18 / @baseSize);
+                        line-height: (25 / @baseSize);
+                    }
+                }
+            }
+        }
+    }
+    .iconBox {
+        display: flex;
+        span {
+            display: block;
+            width: (50 / @baseSize);
+            height: (50 / @baseSize);
+            text-align: center;
+            i {
+                font-size: (22 / @baseSize);
+                line-height: (50 / @baseSize);
+            }
+        }
+    }
+}
+
+.footer-fixNav {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    padding: (3 / @baseSize) (16 / @baseSize);
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .current {
+            font-weight: 800;
+
+            a {
+                color: #3d3c3c;
+            }
+
+        }
+
+        a {
+            display: flex;
+            flex-direction: column;
+            color: #8c8c8c;
+
+            i {
+                font-size: (24 / @baseSize);
+            }
+
+            span {
+                font-size: (13 / @baseSize);
+                text-align: center;
+                margin-left: (-1 / @baseSize);
+            }
+        }
+    }
+}
+.myBookList{
+    margin-top: (60 / @baseSize);
+    padding: (10 / @baseSize) (15 / @baseSize);
+    .bookCard-box{
+        width: 100%;
+        ul{
+            display: flex;
+            li{
+                a{
+                    width: (130 / @baseSize);
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        margin-top: (10 / @baseSize);
+                        font-size: (18 / @baseSize);
+                        font-weight: 600;
+                    }
+                    img{
+                        height: (150 / @baseSize);
+                        width: (120 / @baseSize);
+                        border-radius: (8 / @baseSize);
+                    }
+                }
+            }
+        }
+    }
+}

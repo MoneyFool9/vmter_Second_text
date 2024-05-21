@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: Helvetica Neue, Tahoma, Arial, PingFangSC-Regular, Hiragino Sans GB, Microsoft Yahei, sans-serif;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+ul {
+  list-style: none;
+}
+.ellipsis-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.layout {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right top, #88a5ab, #80a5a9, #78a5a6, #71a4a1, #6ba49b, #66a497, #62a492, #5fa48d, #5aa58a, #56a586, #52a682, #4ea67e);
+}
+.layout .header-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.41545894vw;
+}
+.layout .header-nav .left {
+  width: 4.83091787vw;
+}
+.layout .header-nav .left i {
+  font-size: 5.79710145vw;
+}
+.layout .header-nav .right {
+  width: 4.83091787vw;
+}
+.layout .header-nav .right i {
+  font-size: 5.79710145vw;
+}
+.user-info {
+  background-image: linear-gradient(to right top, #88a5ab, #80a5a9, #78a5a6, #71a4a1, #6ba49b, #66a497, #62a492, #5fa48d, #5aa58a, #56a586, #52a682, #4ea67e);
+  margin-top: 11.11111111vw;
+}
+.user-info .userInfo-box {
+  margin-left: 3.62318841vw;
+}
+.user-info .userInfo-box .userImg {
+  padding-top: 4.83091787vw;
+  display: flex;
+}
+.user-info .userInfo-box .userImg img {
+  display: block;
+  border-radius: 50%;
+  width: 14.49275362vw;
+  height: auto;
+}
+.user-info .userInfo-box .userImg .userMsg {
+  margin-left: 2.41545894vw;
+}
+.user-info .userInfo-box .userImg .userMsg h2 {
+  margin-top: 1.20772947vw;
+  color: #fff;
+  font-size: 5.31400966vw;
+}
+.user-info .userInfo-box .userImg .userMsg p {
+  margin-top: 0.96618357vw;
+  color: #e5e4e4bd;
+}
+.user-info .userInfo-box .intro {
+  color: #f6f6f6ea;
+  padding: 3.62318841vw 0;
+}
+.user-info .userInfo-box .personInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-info .userInfo-box .personInfo .Info ul {
+  display: flex;
+  gap: 7.24637681vw;
+}
+.user-info .userInfo-box .personInfo .Info ul li {
+  color: #fff;
+}
+.user-info .userInfo-box .personInfo .Info ul li span {
+  color: #f6f6f6ea;
+}
+.user-info .userInfo-box .personInfo .writeInfo {
+  margin-right: 3.62318841vw;
+  color: orange;
+  padding: 1.69082126vw 3.62318841vw;
+  border-radius: 6.76328502vw;
+  background-color: #fff;
+  font-weight: 700;
+}
+.person-space {
+  width: 100%;
+  padding: 2.41545894vw 3.62318841vw 0;
+  border-radius: 4.34782609vw 4.34782609vw 0 0;
+  transform: translateY(-9.66183575vw);
+  background-color: #fff;
+}
+.person-space .bookSpace .title {
+  padding-top: 2.41545894vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.person-space .bookSpace .title p {
+  font-size: 5.31400966vw;
+  font-weight: 800;
+}
+.person-space .bookSpace .title .checkBook {
+  transform: translateY(-0.72463768vw);
+}
+.person-space .mySpace .options {
+  display: flex;
+  font-size: 4.34782609vw;
+  line-height: 7.24637681vw;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 9.66183575vw;
+}
+.person-space .mySpace .options i {
+  font-size: 5.79710145vw;
+}
+.person-space .mySpace .options div {
+  display: flex;
+  gap: 1.20772947vw;
+}
+.bookList .bookType {
+  display: flex;
+  align-items: center;
+  gap: 2.41545894vw;
+  margin-top: 2.41545894vw;
+}
+.bookList .bookType li {
+  padding: 1.20772947vw 2.41545894vw;
+  background-color: #eee;
+  border-radius: 1.93236715vw;
+}
+.bookList .book {
+  display: flex;
+  gap: 3.62318841vw;
+  flex-wrap: wrap;
+  margin-top: 3.62318841vw;
+}
+.bookList .book li {
+  width: 19.3236715vw;
+}
+.bookList .book li .book-cover {
+  background-color: #eee;
+  width: 21.25603865vw;
+  height: 28.98550725vw;
+  border-radius: 1.93236715vw;
+  border: none;
+}
+.bookList .book li .book-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.mySpace {
+  border-top: 1.20772947vw solid #ccc;
+}
+.mySpace .titleTab {
+  margin-top: 2.41545894vw;
+}
+.mySpace .titleTab ul {
+  display: flex;
+  gap: 3.62318841vw;
+}
+.mySpace .titleTab ul li {
+  font-size: 4.83091787vw;
+  padding: 0.72463768vw;
+  box-sizing: border-box;
+}

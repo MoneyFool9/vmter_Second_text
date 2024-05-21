@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/user.css">
+    <script src="../js/ajax.js"></script>
+    <script src="../js/tool.js"></script>
+    <script src="./user.js"></script>
+</head>
+<body>
+    <header class="layout">
+        <div class="header-nav">
+            <div class="left" id="J_goBackBtn"><i class="iconfont">&#xe622;</i></div>
+            <div class="right"><i class="iconfont">&#xe610;</i></div>
+        </div>
+    </header>
+    <section class="user-info">
+        <div class="userInfo-box" id="J_userInfoBox">
+            <div class="userImg">
+                <img src="../images/userImg.jpg" alt="">
+                <div class="userMsg">
+                    <h2>这有只小落叶</h2>
+                    <p>阅读16本书，时长76时24分</p>
+                </div>
+            </div>
+            <div class="intro">介绍一下自己吧</div>
+            <div class="personInfo">
+                <div class="Info">
+                    <ul>
+                        <li>
+                            <h2>0</h2>
+                            <span>关注</span>
+                        </li>
+                        <li>
+                            <h2>0</h2>
+                            <span>粉丝</span>
+                        </li>
+                        <li>
+                            <h2>0</h2>
+                            <span>获赞</span>
+                        </li>
+                        <li>
+                            <h2>0</h2>
+                            <span>拯救书荒</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="writeInfo" >退出登录</div>
+            </div>
+        </div>
+        <br>
+        <br><br>
+    </section>
+    <section class="person-space">
+        <div class="bookSpace">
+            <div class="title">
+                <p>书架</p>
+                <div class="checkBook">
+                    <span>查看书架</span>
+                    <i class="iconfont">&#xe606;</i>
+                </div>
+            </div>
+            <div class="bookList" id="J_bookList">
+                <ul class="bookType">
+                    <li>
+                        <span>都市日常</span>
+                    </li>
+                    <li>
+                        <span>玄幻脑洞</span>
+                    </li>
+                </ul>
+                <ul class="book">
+                    <li><a href="#">
+                        <img class="book-cover" src="../images/loading88*120.jpg" alt="">
+                        <p class="book-title">你选黄毛小混混原来他是霸道总裁</p>
+                    </a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mySpace">
+
+            <div class="titleTab">
+                <ul>
+                    <li>推书</li>
+                    <li>讨论</li>
+                    <li>故事</li>
+                    <li>视频</li>
+                </ul>
+            </div>
+            <div class="userMainMsg" id="J_userMainMsg">
+                <div class="myComment"></div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="options">
+                <div class="share"><i class="iconfont">&#xe6bb;</i>
+                    <p>转发</p>
+                </div>
+                <div class="comment"><i class="iconfont">&#xe9b0;</i>评论</div>
+                <div class="ToTop"><i class="iconfont">&#xe624;</i></div>
+            </div>
+            
+        </div>
+    </section>
+    <script type="text/html" id="userInfo">
+        <div class="userImg">
+            <img src="{{ userImg }}" alt="">
+            <div class="userMsg">
+                <h2>{{ userName }}</h2>
+                <p>阅读{{ readBookNum }}本书，时长{{ readTime }}</p>
+            </div>
+        </div>
+        <div class="intro">{{ introduction }}</div>
+        <div class="personInfo">
+            <div class="Info">
+                <ul>
+                    <li>
+                        <h2>0</h2>
+                        <span>关注</span>
+                    </li>
+                    <li>
+                        <h2>0</h2>
+                        <span>粉丝</span>
+                    </li>
+                    <li>
+                        <h2>0</h2>
+                        <span>获赞</span>
+                    </li>
+                    <li>
+                        <h2>0</h2>
+                        <span>拯救书荒</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="writeInfo" id="J_loginOutBtn">退出登录</div>
+        </div>
+    </script>
+    <script type="text/html" id="userBookList">
+        <ul class="bookType">
+            <li>
+                <span></span>
+            </li>
+        </ul>
+        <ul class="book">
+            <li><a href="#">
+                    <img class="book-cover" src="" alt="">
+                    <p class="book-title"></p>
+                </a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </script>
+</body>
+</html>

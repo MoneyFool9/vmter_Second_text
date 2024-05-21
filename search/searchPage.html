@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索页</title>
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+    <link rel="stylesheet" href="./css/searchPage.css">
+    <script src="../js/tool.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div class="layout">
+        
+        <div class="search">
+            <div class="goBack J_goBackBtn">
+                <i class="iconfont">&#xe622;</i>
+            </div>
+            <div class="search-icon">
+                <i class="iconfont">&#xe61a;</i>
+            </div>
+            <input type="text" id="J_searchInput" placeholder="全球突变：开局获得3级文明！" autofocus>
+            <div class="search-btn J_searchBtn">
+                <span>搜索</span>
+            </div>
+        </div>
+    </div>
+    <div class="searchCon-box J_searConBox">
+        <div class="searchCon">
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+    
+    <script type="text/html" id="J_searchCon">
+        <li data-bookId="{{ bookId }}">
+            <div class="img-box">
+                <img src="../images/loading120*150.jpg" alt="">
+                <div class="point">{{ point }}分</div>
+            </div>
+        
+            <div class="bookInfo">
+                <h3>{{ name }}</h3>
+                <span>{{ author }}，{{ label }} · 发布：{{ postedTime }}</span>
+                <p>{{ introduction }}</p>
+            </div>
+        </li>
+    </script>
+    <script type="text/html" id="J_loadingTpl">
+        <img class="loading-icon" src="../images/loading.gif" alt="">
+    </script>
+</body>
+</html>

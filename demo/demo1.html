@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Div Animation</title>
+    <style>
+        /* 初始时隐藏div元素 */
+        #animatedDiv {
+            display: none;
+            position: absolute;
+            bottom: 0;
+            width: 80%;
+            height: 300px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(100%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="toggleButton">点击显示</button>
+    <div id="animatedDiv">这是一个动画效果的div元素</div>
+
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function () {
+            var animatedDiv = document.getElementById('animatedDiv');
+
+            // 如果当前是隐藏状态，则显示，否则隐藏
+            if (animatedDiv.style.display === 'none') {
+                animatedDiv.style.display = 'block';
+                // 使用setTimeout延迟一小段时间，以便transition生效
+                setTimeout(function () {
+                    animatedDiv.style.transform = 'translateY(0)';
+                }, 10);
+            } else {
+                animatedDiv.style.transform = 'translateY(100%)';
+                // 在动画完成后隐藏div元素
+                setTimeout(function () {
+                    animatedDiv.style.display = 'none';
+                }, 300); // 这里的300是transition的时间
+            }
+        });
+    </script>
+
+</body>
+
+</html>

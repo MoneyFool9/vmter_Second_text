@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索页</title>
+    <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+    <script src="../js/ajax.js"></script>
+    <script src="../js/tool.js"></script>
+    <script src="./search.js"></script>
+</head>
+<body>
+    <header class="header-tabs">
+        <div class="tab-list">
+            <ul>
+                <li class="current"><a href="#">男生</a></li>
+                <li><a href="#">女生</a></li>
+                <li><a href="#">听书</a></li>
+                <li><a href="#">出版</a></li>
+                <li><a href="#">短剧</a></li>
+                <li><a href="#">漫画</a></li>
+            </ul>
+            <div class="search" id="J_searchBtn">
+                <i class="iconfont">&#xe609;</i>
+            </div>
+        </div>
+    </header>
+    <section class="searchCon">
+        <div class="left-tabs">
+            <ul>
+                <li class="current"><a href="#">分类</a></li>
+                <li>青春</li>
+                <li>社会</li>
+                <li>文学</li>
+                <li>言情</li>
+                <li>科幻</li>
+                <li>历史</li>
+                <li>恐怖</li>
+                <li>惊恐</li>
+                <li>冒险</li>
+                <li>奇幻</li>
+            </ul>
+        </div>
+        <div class="content" id="J_bookList">
+            <div class="content-box content-box1">
+                <span>分类</span>
+                <ul>
+                    <li>青春</li>
+                    <li>社会</li>
+                    <li>文学</li>
+                    <li>言情</li>
+                    <li>科幻</li>
+                    <li>历史</li>
+                    <li>恐怖</li>
+                    <li>惊恐</li>
+                    <li>冒险</li>
+                    <li>奇幻</li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+    <footer class="footer-fixNav">
+        <ul>
+            <li><a href="../index.html">
+                    <i class="iconfont">&#xe602;</i>
+                    <span>书城</span>
+                </a></li>
+            <li class="current"><a href="./search.html">
+                    <i class="iconfont">&#xe706;</i>
+                    <span>分类</span>
+                </a></li>
+            <li><a href="#">
+                    <i class="iconfont">&#xe608;</i>
+                    <span>福利</span>
+                </a></li>
+            <li><a href="../bookList/bookList.html">
+                    <i class="iconfont">&#xe60b;</i>
+                    <span>书架</span>
+                </a></li>
+            <li><a href="../login/My.html">
+                    <i class="iconfont">&#xe60d;</i>
+                    <span>我的</span>
+                </a></li>
+        </ul>
+    </footer>
+    <script type="text/html" id="J_bookType">
+        <div class="content-box content-box3">
+            <span>{{ type }}</span>
+            <ul onclick="bookTypeClick(event)">
+                {{ typeContent }}
+            </ul>
+        </div>
+
+    </script>
+</body>
+</html>
